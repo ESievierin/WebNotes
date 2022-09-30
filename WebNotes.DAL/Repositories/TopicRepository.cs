@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace WebNotes.DAL.Repositories
 {
-    public class TopicRepositry : IRepository<Topic>
+    public class TopicRepository : IRepository<Topic>
     {
        
             private WebNoteContext db;

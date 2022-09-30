@@ -5,7 +5,12 @@
       "ProjectGuid": "987fb2af-f9dc-49b7-9091-b5cf3b9f1ae4",
       "DisplayName": "WebNotes.DAL",
       "ColorIndex": 0
+    },
+    "e0696db1-940c-4281-94e5-fcd1ce3084e5": {
+      "ProjectGuid": "e0696db1-940c-4281-94e5-fcd1ce3084e5",
+      "DisplayName": "WebNotes.BLL",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

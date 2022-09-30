@@ -43,7 +43,7 @@ namespace WebNotes.DAL.Repositories
                 return topicRepository;
             }
         }
-        public IRepository<User> Users
+        public IRepository<User> Usersw
         {
             get
             {
