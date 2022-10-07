@@ -43,7 +43,7 @@ namespace WebNotes.DAL.Repositories
                 return topicRepository;
             }
         }
-        public IRepository<User> Usersw
+        public IRepository<User> Users
         {
             get
             {
@@ -53,6 +53,10 @@ namespace WebNotes.DAL.Repositories
                 }
                 return userRepository;
             }
+        }
+        public void Save()
+        {
+            db.SaveChanges();
         }
 
     }
