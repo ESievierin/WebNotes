@@ -20,7 +20,6 @@ namespace WebNotes.BLL.DTO
         {
             UserName = userName;
             Password = password;
-            CreationTime = DateTime.Now;
         }
     }
 }

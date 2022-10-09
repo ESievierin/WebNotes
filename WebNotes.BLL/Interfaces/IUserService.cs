@@ -12,9 +12,9 @@ namespace WebNotes.BLL.Interfaces
         IEnumerable<UserDTO> GetAll();
         UserDTO Get(int id);
 
-        void Registration(string login, string password);
+        bool Registration(string username, string password);
 
-        void Authorization(string login, string password);
+        
 
         void Delete(int id);
     }
