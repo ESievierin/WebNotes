@@ -23,15 +23,13 @@ namespace WebNotes.BLL.Service
                 .ReverseMap()).CreateMapper();
         }
 
-        public IEnumerable<TopicDTO> GetAll() =>
-            mapperTopic.Map<IEnumerable<Topic>, List<TopicDTO>>(Database.Topics.GetAll());
+    
 
         public TopicDTO Get(int id) =>
             mapperTopic.Map<Topic, TopicDTO>(Database.Topics.Get(id));
 
         public IEnumerable<TopicDTO> GetAllByUser(int userid) =>
-            mapperTopic.Map<IEnumerable<Topic>, List<TopicDTO>>(Database.Topics.GetAll()
-                .Where(tp => tp.Userid == userid));
+            mapperTopic.Map<IEnumerable<Topic>, List<TopicDTO>>(Database.Topics.GetTopicsByUser(userid));
         
         public void Create(TopicDTO item)
         {

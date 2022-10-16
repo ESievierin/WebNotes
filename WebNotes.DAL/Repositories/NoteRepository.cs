@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace WebNotes.DAL.Repositories
 {
-    public class NoteRepository : IRepository<Note>
+    public class NoteRepository : INoteRepository
     {
         private WebNoteContext db;
 
@@ -49,5 +49,10 @@ namespace WebNotes.DAL.Repositories
             }
 
         }
+
+        public IEnumerable<Note> GetNotesByTopic(int topicid) =>
+            db.Notes
+            .AsQueryable()
+            .Where(nt => nt.Topicid == topicid);
     }
 }

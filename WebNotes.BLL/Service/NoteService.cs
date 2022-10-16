@@ -21,15 +21,12 @@ namespace WebNotes.BLL.Service
             Database = database;
             mapperNote = new MapperConfiguration(cfg => cfg.CreateMap<Note,NoteDTO>().ReverseMap()).CreateMapper();
         }
-        public IEnumerable<NoteDTO> GetAll() =>
-             mapperNote.Map<IEnumerable<Note>, List<NoteDTO>>(Database.Notes.GetAll());
-
+     
         public NoteDTO Get(int id) =>
              mapperNote.Map<Note, NoteDTO>(Database.Notes.Get(id));
         
         public IEnumerable<NoteDTO> GetAllByTopic(int topicid) =>
-            mapperNote.Map<IEnumerable<Note>, IEnumerable<NoteDTO>>(Database.Notes.GetAll()
-            .Where(nt => nt.Topicid == topicid));
+            mapperNote.Map<IEnumerable<Note>, IEnumerable<NoteDTO>>(Database.Notes.GetNotesByTopic(topicid));
         public string GetNoteText(int id) =>
             Database.Notes.Get(id).Text;
         public void Create(NoteDTO item)

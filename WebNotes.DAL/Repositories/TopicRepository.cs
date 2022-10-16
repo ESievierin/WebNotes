@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace WebNotes.DAL.Repositories
 {
-    public class TopicRepository : IRepository<Topic>
+    public class TopicRepository : ITopicRepository
     {
        
             private WebNoteContext db;
 
-            public TopicRepositry(WebNoteContext db)
+            public TopicRepository(WebNoteContext db)
             {
                 this.db = db;
             }
@@ -41,7 +41,7 @@ namespace WebNotes.DAL.Repositories
             }
             public void Update(Topic newTopic, int id)
             {
-            Topic topic = db.Topics.Find(id);
+                Topic topic = db.Topics.Find(id);
 
                 if (topic != null)
                 {
@@ -49,8 +49,14 @@ namespace WebNotes.DAL.Repositories
                 }
 
             }
-        }
+
+            public IEnumerable<Topic> GetTopicsByUser(int userid) =>
+                db.Topics
+                .AsQueryable()
+                .Where(tp => tp.Userid == userid);
+           
     }
+}
 
 
 

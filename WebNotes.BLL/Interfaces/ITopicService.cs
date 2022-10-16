@@ -9,7 +9,7 @@ namespace WebNotes.BLL.Interfaces
 {
     public interface ITopicService
     {
-        IEnumerable<TopicDTO> GetAll();
+      
         IEnumerable<TopicDTO> GetAllByUser(int userid);
         TopicDTO Get(int id);
 

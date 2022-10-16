@@ -9,7 +9,7 @@ namespace WebNotes.BLL.Interfaces
 {
     public interface INoteService
     {
-        IEnumerable<NoteDTO> GetAll();
+  
         IEnumerable<NoteDTO> GetAllByTopic(int topicid);
         NoteDTO Get(int id);
         string GetNoteText(int id);

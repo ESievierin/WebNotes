@@ -23,8 +23,7 @@ namespace WebNotes.BLL.Service
                 .ReverseMap()).CreateMapper();
         }
 
-        public IEnumerable<UserDTO> GetAll() =>
-            mapperUser.Map<IEnumerable<User>,IEnumerable<UserDTO>>(Database.Users.GetAll());
+
 
         public UserDTO Get(int id) =>
             mapperUser.Map<User, UserDTO>(Database.Users.Get(id));
@@ -50,13 +49,17 @@ namespace WebNotes.BLL.Service
         {
             UserDTO newUser = new UserDTO(username, password);
 
-            if(Database.Users.GetAll().Where(us => us.UserName == username).FirstOrDefault() != null)
+            if(Database.Users.GetByLoginAndPassword(username,password) == null)
             {
                 Create(newUser);
                 return true;
             }
             return false;
         }
+
+        public int Login(string username, string password) =>
+            Database.Users.GetByLoginAndPassword(username, password).id;
+        
        
     }
 }

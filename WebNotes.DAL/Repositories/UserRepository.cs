@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace WebNotes.DAL.Repositories
 {
-    public class UserRepository : IRepository<User>
+    public class UserRepository : IUserRepository
     {
         private WebNoteContext db;
 
@@ -49,5 +49,11 @@ namespace WebNotes.DAL.Repositories
                 db.Users.Update(newUser);
             }
         }
+
+        public int GetByLoginAndPassword(string username, string password) =>
+            db.Users
+            .AsQueryable()
+            .FirstOrDefault(us => us.UserName == username && us.Password == password).Id;
+      
     }
 }
