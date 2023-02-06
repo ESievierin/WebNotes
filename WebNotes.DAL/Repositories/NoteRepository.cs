@@ -41,12 +41,10 @@ namespace WebNotes.DAL.Repositories
         }
         public void Update(Note newNote,int id)
         {
-            Note note = db.Notes.Find(id);
 
-            if (note != null)
-            {
-                db.Notes.Update(newNote);
-            }
+            db.Entry(newNote).State = EntityState.Modified;
+            db.Notes.Update(newNote);
+            
 
         }
 

@@ -9,9 +9,9 @@ namespace WebNotes.DAL.Interfaces
 {
     public interface IWorkUnit
     {
-        IRepository<Note> Notes { get; }
-        IRepository<User> Users { get; }
-        IRepository<Topic> Topics { get; }
+        INoteRepository Notes { get; }
+        IUserRepository Users { get; }
+        ITopicRepository Topics { get; }
 
         void Save();
     }

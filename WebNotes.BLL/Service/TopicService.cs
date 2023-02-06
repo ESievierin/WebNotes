@@ -47,7 +47,17 @@ namespace WebNotes.BLL.Service
                 Database.Save();
             }
         }
-      
-       
+        public void Update(int id, TopicDTO item)
+        {
+            var data = Database.Topics.Get(id);
+            if (data != null)
+            {
+                Database.Topics.Update(mapperTopic.Map<TopicDTO, Topic>(item), id);
+                Database.Save();
+            }
+        }
+
+
+
     }
 }

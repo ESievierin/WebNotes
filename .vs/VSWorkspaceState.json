@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WebNotes.API",
+    "\\WebNotes.BLL",
+    "\\WebNotes.BLL\\DTO",
+    "\\WebNotes.BLL\\Service",
+    "\\WebNotes.DAL",
+    "\\WebNotes.DAL\\obj",
+    "\\WebNotes.DAL\\Repositories"
+  ],
+  "PreviewInSolutionExplorer": false
+}

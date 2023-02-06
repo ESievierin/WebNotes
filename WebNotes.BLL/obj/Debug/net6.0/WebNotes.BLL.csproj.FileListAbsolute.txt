@@ -1,0 +1,15 @@
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\WebNotes.BLL.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\WebNotes.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\WebNotes.BLL.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\WebNotes.BLL.AssemblyInfo.cs
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\WebNotes.BLL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\bin\Debug\net6.0\WebNotes.BLL.deps.json
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\bin\Debug\net6.0\WebNotes.BLL.dll
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\bin\Debug\net6.0\WebNotes.BLL.pdb
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\bin\Debug\net6.0\WebNotes.DAL.dll
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\bin\Debug\net6.0\WebNotes.DAL.pdb
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\WebNotes.BLL.csproj.CopyComplete
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\WebNotes.BLL.dll
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\refint\WebNotes.BLL.dll
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\WebNotes.BLL.pdb
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.BLL\obj\Debug\net6.0\ref\WebNotes.BLL.dll

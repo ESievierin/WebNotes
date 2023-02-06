@@ -21,7 +21,7 @@ namespace WebNotes.DAL.Repositories
         {
             db = new WebNoteContext();
         }
-        public IRepository<Note> Notes
+        public INoteRepository Notes
         {
             get
             {
@@ -32,7 +32,7 @@ namespace WebNotes.DAL.Repositories
                 return noteRepository;
             }
         }
-        public IRepository<Topic> Topics
+        public ITopicRepository Topics
         {
             get
             {
@@ -43,7 +43,7 @@ namespace WebNotes.DAL.Repositories
                 return topicRepository;
             }
         }
-        public IRepository<User> Users
+        public IUserRepository Users
         {
             get
             {

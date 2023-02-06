@@ -16,7 +16,7 @@ namespace WebNotes.DAL.EF
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"data source = DESKTOP-IA97AVE;initial catalog = WebNoteBD;integrated security = True");
+            optionsBuilder.UseSqlServer(@"data Source = DESKTOP-HB9SS2O\SQLEXPRESS;initial catalog = WebNoteDB;integrated security = True");
         }
 
         public DbSet<User> Users { get; set; }

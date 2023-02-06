@@ -15,6 +15,8 @@ namespace WebNotes.BLL.Interfaces
         string GetNoteText(int id);
         void Create(NoteDTO item);
         void Delete(int id);
-        
+        void Update(int id, NoteDTO item);
+
+
     }
 }

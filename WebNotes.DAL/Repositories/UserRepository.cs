@@ -42,18 +42,20 @@ namespace WebNotes.DAL.Repositories
         }
         public void Update(User newUser, int id)
         {
-            User user = db.Users.Find(id);
-
-            if (user != null)
-            {
-                db.Users.Update(newUser);
-            }
+         db.Entry(newUser).State = EntityState.Modified;
+         db.Users.Update(newUser);
+         
         }
 
-        public int GetByLoginAndPassword(string username, string password) =>
+        public User GetByLogin(string username) =>       
             db.Users
             .AsQueryable()
-            .FirstOrDefault(us => us.UserName == username && us.Password == password).Id;
+            .FirstOrDefault(us => us.UserName == username);
+       
+        public User GetByLoginAndPassword(string username, string password) =>
+            db.Users
+            .AsQueryable()
+            .FirstOrDefault(us => us.UserName == username && us.Password == password);
       
     }
 }

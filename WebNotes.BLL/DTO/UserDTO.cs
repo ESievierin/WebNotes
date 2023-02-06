@@ -21,5 +21,12 @@ namespace WebNotes.BLL.DTO
             UserName = userName;
             Password = password;
         }
+        public UserDTO(int id ,string userName, string password)
+        {
+            Id = id;
+            UserName = userName;
+            Password = password;
+        }
     }
+
 }

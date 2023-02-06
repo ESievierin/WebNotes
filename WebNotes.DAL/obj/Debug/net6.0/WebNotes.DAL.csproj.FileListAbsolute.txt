@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\obj\Debug\net6.0\WebNotes.DAL.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\obj\Debug\net6.0\WebNotes.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\obj\Debug\net6.0\WebNotes.DAL.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\obj\Debug\net6.0\WebNotes.DAL.AssemblyInfo.cs
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\obj\Debug\net6.0\WebNotes.DAL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\bin\Debug\net6.0\WebNotes.DAL.deps.json
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\bin\Debug\net6.0\WebNotes.DAL.dll
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\bin\Debug\net6.0\WebNotes.DAL.pdb
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\obj\Debug\net6.0\WebNotes.DAL.dll
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\obj\Debug\net6.0\refint\WebNotes.DAL.dll
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\obj\Debug\net6.0\WebNotes.DAL.pdb
+C:\Users\admin\Desktop\My projects\WebNotes\WebNotes.DAL\obj\Debug\net6.0\ref\WebNotes.DAL.dll

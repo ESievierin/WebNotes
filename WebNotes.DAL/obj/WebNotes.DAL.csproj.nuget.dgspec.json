@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ilyas\\source\\repos\\WebNotes\\WebNotes.DAL\\WebNotes.DAL.csproj": {}
+    "C:\\Users\\admin\\Desktop\\раб стол\\My projects\\WebNotes\\WebNotes.DAL\\WebNotes.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ilyas\\source\\repos\\WebNotes\\WebNotes.DAL\\WebNotes.DAL.csproj": {
+    "C:\\Users\\admin\\Desktop\\раб стол\\My projects\\WebNotes\\WebNotes.DAL\\WebNotes.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilyas\\source\\repos\\WebNotes\\WebNotes.DAL\\WebNotes.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\раб стол\\My projects\\WebNotes\\WebNotes.DAL\\WebNotes.DAL.csproj",
         "projectName": "WebNotes.DAL",
-        "projectPath": "C:\\Users\\ilyas\\source\\repos\\WebNotes\\WebNotes.DAL\\WebNotes.DAL.csproj",
-        "packagesPath": "C:\\Users\\ilyas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilyas\\source\\repos\\WebNotes\\WebNotes.DAL\\obj\\",
+        "projectPath": "C:\\Users\\admin\\Desktop\\раб стол\\My projects\\WebNotes\\WebNotes.DAL\\WebNotes.DAL.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\раб стол\\My projects\\WebNotes\\WebNotes.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ilyas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +60,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

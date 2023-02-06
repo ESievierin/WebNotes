@@ -12,7 +12,8 @@ namespace WebNotes.DAL.Interfaces
         
         User Get(int id);
 
-        int GetUserByUserNameAndPassword(string username, string password);
+        User GetByLogin(string username);
+        User GetByLoginAndPassword(string username, string password);
         void Create(User item);
         void Delete(int id);
         void Update(User newitem,int id);

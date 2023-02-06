@@ -12,14 +12,19 @@ namespace WebNotes.BLL.DTO
 
         public string Name { get; set; }
 
-        public int CountOfNotes { get; set; }
-
         public int Userid { get; set; }
 
-        public TopicDTO(string name,int countOfNotes,int userid)
+        public TopicDTO(string name,int userid)
         {
             Name = name;
-            CountOfNotes = countOfNotes;
+            
+            Userid = userid;
+        }
+        public TopicDTO(int id,string name, int userid)
+        {
+            Id = id;
+            Name = name;
+
             Userid = userid;
         }
     }

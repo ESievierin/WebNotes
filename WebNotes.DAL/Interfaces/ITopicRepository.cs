@@ -11,7 +11,7 @@ namespace WebNotes.DAL.Interfaces
     {
         Topic Get(int id);
 
-        IEnumerable<Topic> GetTopicByUser(int userid);
+        IEnumerable<Topic> GetTopicsByUser(int userid);
         void Create(Topic item);
         void Delete(int id);
         void Update(Topic newitem, int id);

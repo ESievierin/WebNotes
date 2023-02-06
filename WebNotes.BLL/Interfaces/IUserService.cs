@@ -12,10 +12,12 @@ namespace WebNotes.BLL.Interfaces
       
         UserDTO Get(int id);
 
-        bool Registration(string username, string password);
+        bool Registration(string login, string password);
 
-        int Login(string username, string password);
+        int Login(string login, string password);
 
         void Delete(int id);
+
+        void Update(int id, UserDTO item);
     }
 }

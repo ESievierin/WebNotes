@@ -22,5 +22,12 @@ namespace WebNotes.BLL.DTO
             Name = name;
             Text = text;
         }
+        public NoteDTO(int id,int topicid, string name, string text)
+        {
+            Id = id;
+            Topicid = topicid;
+            Name = name;
+            Text = text;
+        }
     }
 }

@@ -16,5 +16,6 @@ namespace WebNotes.BLL.Interfaces
 
         void Create(TopicDTO item);
         void Delete(int id);
+        void Update(int id, TopicDTO item);
     }
 }

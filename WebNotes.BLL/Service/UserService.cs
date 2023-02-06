@@ -45,11 +45,11 @@ namespace WebNotes.BLL.Service
             }
         }
 
-        public bool Registration(string username,string password)
+        public bool Registration(string login,string password)
         {
-            UserDTO newUser = new UserDTO(username, password);
+            UserDTO newUser = new UserDTO(login, password);
 
-            if(Database.Users.GetByLoginAndPassword(username,password) == null)
+            if(Database.Users.GetByLogin(login) == null)
             {
                 Create(newUser);
                 return true;
@@ -57,9 +57,30 @@ namespace WebNotes.BLL.Service
             return false;
         }
 
-        public int Login(string username, string password) =>
-            Database.Users.GetByLoginAndPassword(username, password).id;
-        
-       
+        public int Login(string login, string password)
+        {
+            var user = Database.Users.GetByLoginAndPassword(login, password);
+            if(user == null)
+            {
+                return 0;
+            }
+            else
+            {
+                return user.Id;  
+            }
+        }
+           
+
+        public void Update(int id, UserDTO item)
+        {
+            var data = Database.Users.Get(id);
+            if (data != null)
+            {
+                Database.Users.Update(mapperUser.Map<UserDTO, User>(item), id);
+                Database.Save();
+            }
+        }
+
+
     }
 }

@@ -29,6 +29,7 @@ namespace WebNotes.BLL.Service
             mapperNote.Map<IEnumerable<Note>, IEnumerable<NoteDTO>>(Database.Notes.GetNotesByTopic(topicid));
         public string GetNoteText(int id) =>
             Database.Notes.Get(id).Text;
+
         public void Create(NoteDTO item)
         {
             Database.Notes.Create(mapperNote.Map<NoteDTO, Note>(item));
@@ -40,6 +41,16 @@ namespace WebNotes.BLL.Service
             if (data != null)
             {
                 Database.Notes.Delete(id);
+                Database.Save();
+            }
+        }
+        public void Update(int id,NoteDTO item)
+        {
+            var data = Database.Notes.Get(id);
+            
+            if(data != null)
+            {
+                Database.Notes.Update(mapperNote.Map<NoteDTO, Note>(item), id);
                 Database.Save();
             }
         }

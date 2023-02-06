@@ -12,7 +12,6 @@ namespace WebNotes.DAL.Entities
 
         public string Name { get; set; }
 
-        public int CountOfNotes{ get; set; }
         
         public int Userid { get; set; }
 
